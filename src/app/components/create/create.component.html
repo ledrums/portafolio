@@ -1,0 +1,62 @@
+<div class="container">
+  <h2>{{title}}</h2>
+  <div class="msg-succes" *ngIf="status == 'success'">
+    El proyecto se ha creado correctamente.<a [routerLink]="['/proyecto', save_project._id]">Verlo aquí.</a>
+  </div>
+  <div class="msg-failed" *ngIf="status == 'failed'">
+    El proyecto no se ha creado.
+  </div>
+
+
+  <form #projectForm="ngForm" (ngSubmit)="onSubmit(projectForm)">
+    <div class="form-group">
+      <label for="name">Nombre del Proyecto</label>
+      <input class="form-control" type="text" name="name" #name="ngModel" [(ngModel)]="project.name" required />
+      <span class="error-msg" *ngIf="name.touched && !name.valid">
+        El nombre es obligatorio.
+      </span>
+    </div>
+    
+    <div class="form-group">
+      <label for="description">Descripción del Proyecto</label>
+      <textarea class="form-control" name="description" #description="ngModel" [(ngModel)]="project.description" required></textarea>
+      <span class="error-msg" *ngIf="description.touched && !description.valid">
+        La descripción es obligatoria.
+      </span>
+    </div>
+    
+    <div class="form-group">
+      <label for="category">Categoría</label>
+      <input class="form-control" type="text" name="category" #category="ngModel" [(ngModel)]="project.category" required />
+      <span class="error-msg" *ngIf="category.touched && !category.valid">
+        La categoría es obligatoria.
+      </span>
+    </div>
+    
+    <div class="form-group">
+      <label for="year">Año de publicación</label>
+      <input class="form-control" type="number" name="year" #year="ngModel" [(ngModel)]="project.year" required />
+     
+    </div>
+    
+    <div class="form-group"> 
+      <label for="langs">Tecnología Aplicada</label>
+      <input class="form-control" type="text" name="langs" #langs="ngModel" [(ngModel)]="project.langs" required />
+      <span class="error-msg" *ngIf="langs.touched && !langs.valid">
+        La tecnología es obligatoria.
+      </span>
+    </div>
+    
+    <div class="form-group">
+      <label for="image">Imagén del Proyecto</label>
+      <input class="form-control-file" type="file" name="image" placeholder="Subir Imagén" (change)="fileChangeEvent($event)"/>
+    
+    </div>
+   
+    <div class="form-group mt-3">
+      <input class="btn btn-outline-dark" type="submit" value="Enviar" [disabled]="!projectForm.form.valid" />
+    </div>
+
+
+  </form>
+</div>

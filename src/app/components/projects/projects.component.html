@@ -1,0 +1,59 @@
+<!--
+<div class="container">
+  <h2>Projects</h2>
+
+  <ul>
+    <li *ngFor="let project of projects" class="project">
+      <a [routerLink]="['/proyecto', project._id]">
+        <div class="image">
+          <img src="{{url+ 'get-image/' +project.image}}" *ngIf="project.image" />
+        </div>
+        <h2>{{project.name}}</h2>
+        {{project.category}}
+      </a>
+    </li>
+  </ul>
+</div>
+
+-->
+<section class="project-container" id="project-container">
+  <div class="u-center-text">
+      <h2 class="heading-secondary">
+        About my Projects & Designs.
+      </h2>
+  </div>
+
+    <div class="project-card"  *ngFor="let project of projects"  >
+        <a [routerLink]="['/proyecto', project._id]">
+            <div class="project-card__side project-card__side--front">
+                <div class="project-card__picture project-card__picture--1">
+                    <img src="{{url+ 'get-image/' +project.image}}" *ngIf="project.image"  class="img-fluid"/>
+                </div>
+                <h4 class="project-card__heading">
+                    <span class="project-card__heading-span project-card__heading-span--1">{{project.category}}</span>
+                </h4>
+                <div class="project-card__details">
+                    <ul>
+                        <li>Name:&nbsp;<strong>{{project.name}}</strong></li>
+                        <li>Technologies: &nbsp;<strong>{{project.langs}}</strong></li>
+                        <li>Date:&nbsp;<strong>{{project.year}}</strong></li>
+                        <li>More details &nbsp;<i class="fa fa-angle-double-right"></i></li>                        
+                    </ul>
+                </div>
+            </div>
+            <div class="project-card__side project-card__side--back project-card__side--back-1">
+                <div class="project-card__cta">
+                    <div class="project-card__price-box">
+                        <div>
+                            <img src="{{url+ 'get-image/' +project.image}}" *ngIf="project.image" class="img-slide"/>
+                        </div>
+                        <div class="project-card__price-box">
+                            <h4>{{project.name}}</h4>
+                        </div>
+                    </div>
+                    <a href="#popup" class="btn btn--white">Book now!</a>
+                </div>
+            </div>
+        </a>    
+    </div>
+</section>
