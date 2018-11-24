@@ -132,6 +132,10 @@
 
 ////////////////////////////////////////
 // SIDE NAVIGATION
+.activado {
+    background-color: var(--color-primary-light);
+
+ }
 .side-nav {
     font-size: 1.4rem;
     list-style: none;
@@ -178,7 +182,7 @@
         background-color: var(--color-primary-light);
     }
 
-    &__link:link, .activado, 
+    &__link:link,  
     &__link:visited {
         color: var(--color-grey-light-1);
         text-decoration: none;

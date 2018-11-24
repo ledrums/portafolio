@@ -28,32 +28,28 @@ p {
     color:$color-white;
     text-transform: uppercase;
     backface-visibility: hidden;
-    margin-bottom: 3rem;
+    
   
     &--main {
       display:block;
-      font-size: 4rem;
+      
       font-weight: 600;
-      letter-spacing: 3.5rem;
+      letter-spacing: .5rem;
       animation-name: moveInLeft;
       animation-duration: 3s;
       animation-timing-function: ease-out;
-      padding-left: 2rem;
+      
     }
     
     &--sub {
       display:block;
-      font-size: 1.8rem;
+      font-size: 1rem;      
       font-weight: 400;
-      letter-spacing: 0.97rem;
+      letter-spacing: 0.16rem;
       animation-name: moveInRight;
       animation-duration: 3s;
       animation-timing-function: ease-out;
-      background: linear-gradient( 
-        to right , 
-        rgba($dark-color, 0),
-        rgba($color-primary-dark, 0.637),
-        rgba($dark-color, 0))
+      
     }
   }
 

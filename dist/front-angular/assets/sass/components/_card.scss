@@ -3,9 +3,14 @@
     //border-radius: 100%;
     //border: 0.2rem solid $color-white;
     box-shadow: 0 1.5rem 4rem rgba($dark-color, .15);
-    width: 25rem;
+    width: 30rem;
 }
 
+.project-container {
+    //border: 1px solid #252525;
+    text-align: center;
+    //clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+}
 
 .project-card {
   
@@ -104,7 +109,7 @@
 
         ul {
             list-style: none;
-            width: 80%;
+            width: 100%;
             margin: 0 auto;
 
             li {
@@ -133,7 +138,9 @@
     &__price-box {
         text-align: center;
         color: $color-white;
+        margin-top:4rem;
         margin-bottom: 8rem;
+        
     }
 
     &__price-only {
@@ -155,7 +162,7 @@
         width: 28%;  
     }
 
-    @media only screen and (min-width:650px) and (max-width: 909px) {
+    @media only screen and (min-width:850px) and (max-width: 909px) {
         width: 45%;  
     }
 
@@ -213,9 +220,17 @@
             font-size: 4rem;
         }
     }
-    @media only screen and (max-width: 649px),
+    @media only screen and (max-width: 849px),
+    only screen and (hover: none) {
+        width: 80%;
+        margin:0;
+        margin-bottom: 5rem;
+    }
+
+    @media only screen and (max-width: 650px),
     only screen and (hover: none) {
         width: 100%;
         margin:0;
+        margin-bottom: 5rem;
     }
 }

@@ -41,7 +41,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"navigation\">\n    <input type=\"checkbox\" class=\"navigation__checkbox\" id=\"navi-toggle\">\n    <label for=\"navi-toggle\" class=\"navigation__button\">\n          <span class=\"navigation__icon\">&nbsp;</span>\n    </label>\n    <div class=\"navigation__background\">&nbsp;</div>\n    <nav class=\"navigation__nav\">\n        <ul class=\"navigation__list\">\n            <li class=\"navigation__item\"><a class=\"navigation__link\" [routerLink]=\"['/sobre-mi']\" [routerLinkActive]=\"['actived']\">About</a></li>\n            <li class=\"navigation__item\"><a class=\"navigation__link\" [routerLink]=\"['/proyectos']\" [routerLinkActive]=\"['actived']\">Projects</a></li>\n            <li class=\"navigation__item\"><a class=\"navigation__link\" [routerLink]=\"['/crear-proyecto']\" [routerLinkActive]=\"['actived']\">Create</a></li>\n            <li class=\"navigation__item\"><a class=\"navigation__link\" [routerLink]=\"['/contacto']\" [routerLinkActive]=\"['actived']\">Contact</a></li>\n        </ul>\n    </nav>\n    \n</div>\n\n<header class=\"header\">\n  <div class=\"header__logo-box\">\n    <img src=\"../assets/img/logo-white.png\" class=\"header__logo\" />\n  </div>\n \n  <div class=\"header__text-box\">\n    <h1 class=\"heading-primary\">\n      <span class=\"heading-primary--main\">Daniel Velasco</span>\n      <span class=\"heading-primary--sub\">Web & Graphic Designer / Audiovisual Artist</span>\n    </h1>\n\n    <a href=\"#\" class=\"my-btn my-btn--white my-btn--animated\">Enter site</a>\n  </div>\n</header>\n\n<section id=\"content\" class=\"mt-5\">\n  <router-outlet></router-outlet>\n</section>\n\n<footer>\n  <h4>Daniel Velasco &copy;</h4>\n</footer>\n"
+module.exports = "\n<app-header></app-header>\n\n\n<div class=\"flex__container\">\n  <div class=\"flex__content\">\n    <main class=\"view\">\n      <router-outlet></router-outlet>\n    </main>\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -105,12 +105,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_error_error_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/error/error.component */ "./src/app/components/error/error.component.ts");
 /* harmony import */ var _components_components_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/components.component */ "./src/app/components/components.component.ts");
 /* harmony import */ var _components_detail_detail_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./components/detail/detail.component */ "./src/app/components/detail/detail.component.ts");
+/* harmony import */ var _components_header_header_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./components/header/header.component */ "./src/app/components/header/header.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -139,6 +141,7 @@ var AppModule = /** @class */ (function () {
                 _components_error_error_component__WEBPACK_IMPORTED_MODULE_11__["ErrorComponent"],
                 _components_components_component__WEBPACK_IMPORTED_MODULE_12__["ComponentsComponent"],
                 _components_detail_detail_component__WEBPACK_IMPORTED_MODULE_13__["DetailComponent"],
+                _components_header_header_component__WEBPACK_IMPORTED_MODULE_14__["HeaderComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
@@ -218,7 +221,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<main>\n    <section class=\"section-about\">\n        <div class=\"u-center-text\">\n            <h2 class=\"heading-secondary mt-5 mb-5\">\n                About my professional skills.\n            </h2>\n        </div>\n        <div class=\"main-grid mt-5\">\n            <div class=\"main-grid__row\">\n                <div class=\"col-1-of-2 p-4\">\n                    <h3 class=\"text-grey\">TECHNOLOGICAL KNOWLEDGE</h3>\n                    <div class=\"light-text\">\n                        <ul>\n                            <li><i class=\"far fa-arrow-alt-circle-right\"></i>Advanced Control of designs software (Photoshop, Illustrator, Animated).</li>\n                            <li>Resposive Web design (CSS Grid /Flex Box, SASS, HTML5).</li>\n                            <li>User Interface designer UI (Wireframes, Skecth, Zepplin, Photoshop)</li>\n                            <li>Front-End Mock-Up (ES6, Jquery, Angular, React, Wordpress).</li>\n                            <li>Post Video and Audio production (After Effects, Premier Pro, FL Studio).</li>\n                        </ul>\n                    </div>\n                    <a href=\"#\" class=\"btn-text\">Work Experience &rarr;</a>\n                </div>\n                <div class=\"col-1-of-2\">\n                    <div class=\"composition\">\n                        <img src=\"../../../assets/img/nat-1-large.jpg\" alt=\"Img 1\" class=\"composition__photo composition__photo--p1\">\n                        <img src=\"../../../assets/img/nat-2-large.jpg\" alt=\"Img 2\" class=\"composition__photo composition__photo--p2\">\n                        <img src=\"../../../assets/img/nat-3-large.jpg\" alt=\"Img 3\" class=\"composition__photo composition__photo--p3\">\n                    </div>\n\n                </div>\n            </div>\n        </div>\n             \n        \n    </section>\n\n</main>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<!--\n  <div class=\"main-grid\">\n   <div class=\"main-grid__row\">\n       <div class=\"col-1-of-2\">\n           col 1 of 2\n       </div>\n       <div class=\"col-1-of-2\">\n         col 1 of\n       </div>\n   </div>\n   <div class=\"main-grid__row\">\n    <div class=\"col-1-of-3\">\n        col 1 of 2\n    </div>\n    <div class=\"col-2-of-3\">\n      col 2 of 3\n    </div>\n</div>\n\n</div>\n\n\n\n\n\n<div id=\"title-box\">\n  <h1>{{title}}</h1>\n  <h2>{{subtitle}}</h2>\n  <p>{{email}}</p>\n</div>\n\n-->"
+module.exports = "<div class=\"gallery\">\n  <div class=\"gallery__item\">\n    <img src=\"../assets/img/hotel-1.jpg\" alt=\"Photo of hotel 1\" class=\"gallery__photo\">\n  </div>\n  <div class=\"gallery__item\">\n    <img src=\"../assets/img/hotel-2.jpg\" alt=\"Photo of hotel 2\" class=\"gallery__photo\">\n  </div>\n  <div class=\"gallery__item\">\n    <img src=\"../assets/img/hotel-3.jpg\" alt=\"Photo of hotel 3\" class=\"gallery__photo\">\n  </div>\n</div>\n\n<div class=\"overview\">\n  <h1 class=\"overview__heading\">        \n      <span class=\"heading-primary--main\">Daniel Velasco</span>\n      <span class=\"heading-primary--sub\">Web & Graphic Designer / Audiovisual Artist</span>\n  </h1>\n\n  \n  <div class=\"overview__rating\">\n    <div class=\"overview__rating-average\">8.6</div>\n    <div class=\"overview__rating-count\">429 votes</div>\n  </div>\n</div>\n\n<div class=\"detail\">\n  <div class=\"description\">\n    <h2>ABOUT ME.</h2>\n    <p class=\"paragraph\">\n     Hello!  I´m Professional designer, with over 8 years of experience in graphic and web design in Front-end area. I have many skills in creative development, solid knowledge in techniques and strategies to get optimals results.\n    What I can do!. Resposive Web design using the new CSS3 & HTML5 tools (Grid, Flex Box, SASS, Bootstrap). User Interface designer UI, Mock-Up, Wirefrimes using some populars softwares like Skecth, Zepplin and Photoshop. Essentials Knowledge in desing web apps in Angular and React using JavaScript, JQuery, Node.js, Mongo DB, Redux.\n    Technical management of CMS like Wordpress (Templates, Landing Pages, Build site).\n    </p>\n    <p class=\"paragraph\">\n      In the area of graphic design I have advanced knowledge in Photoshop for digital marketing and photo retouching, Illustrator for vectorial designs and printer, Afeter Effects and Premier Pro for video production and mothion graphics animations, Indesign for web and prints mock-ups.\n    </p>\n    <h2>ABOUT MY SKILLS.</h2>\n    <ul class=\"list\">\n      <li class=\"list__item\">UI Desing.</li>\n      <li class=\"list__item\">Responsive Desing.</li>\n      <li class=\"list__item\">Vectors and drawings.</li>\n      <li class=\"list__item\">Photo Retouching.</li>\n      <li class=\"list__item\">Front-End Design</li>\n      <li class=\"list__item\">Wordpress.</li>\n      <li class=\"list__item\">Video Edit.</li>\n      <li class=\"list__item\">Music Production.</li>\n      <li class=\"list__item\">Print.</li>\n      \n    </ul>\n    <div class=\"recommend\">\n      <p class=\"recommend__count\">\n        Lucy and 3 other friends recommend this hotel.\n      </p>\n      <div class=\"recommend__friends\">\n        <img src=\"img/user-3.jpg\" alt=\"Friend 1\" class=\"recommend__photo\">\n        <img src=\"img/user-4.jpg\" alt=\"Friend 2\" class=\"recommend__photo\">\n        <img src=\"img/user-5.jpg\" alt=\"Friend 3\" class=\"recommend__photo\">\n        <img src=\"img/user-6.jpg\" alt=\"Friend 4\" class=\"recommend__photo\">\n      </div>\n    </div>\n  </div>\n\n  <div class=\"user-reviews\">\n    <figure class=\"review\">\n      <blockquote class=\"review__text\">\n        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi, totam, itaque\n        officia ex.\n      </blockquote>\n      <figcaption class=\"review__user\">\n        <img src=\"img/user-1.jpg\" alt=\"User 1\" class=\"review__photo\">\n        <div class=\"review__user-box\">\n          <p class=\"review__user-name\">Nick Smith</p>\n          <p class=\"review__user-date\">Feb 23rd, 2017</p>\n        </div>\n        <div class=\"review__rating\">7.8</div>\n      </figcaption>\n    </figure>\n\n    <figure class=\"review\">\n      <blockquote class=\"review__text\">\n        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi.\n      </blockquote>\n      <figcaption class=\"review__user\">\n        <img src=\"img/user-2.jpg\" alt=\"User 1\" class=\"review__photo\">\n        <div class=\"review__user-box\">\n          <p class=\"review__user-name\">Mary Thomas</p>\n          <p class=\"review__user-date\">Sept 13th, 2017</p>\n        </div>\n        <div class=\"review__rating\">9.3</div>\n      </figcaption>\n    </figure>\n\n    <button class=\"btn-inline\">Show all <span>&rarr;</span></button>\n  </div>\n\n  <div class=\"cta\">\n    <h2 class=\"cta__book-now\">\n      Good news! We have 4 free rooms for your selected dates!\n    </h2>\n    <button class=\"btn\">\n      <span class=\"btn__visible\">Book now</span>\n      <span class=\"btn__invisible\">Only 4 rooms left</span>\n    </button>\n  </div>\n\n</div>\n"
 
 /***/ }),
 
@@ -645,6 +648,73 @@ var ErrorComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/components/header/header.component.css":
+/*!********************************************************!*\
+  !*** ./src/app/components/header/header.component.css ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvaGVhZGVyL2hlYWRlci5jb21wb25lbnQuY3NzIn0= */"
+
+/***/ }),
+
+/***/ "./src/app/components/header/header.component.html":
+/*!*********************************************************!*\
+  !*** ./src/app/components/header/header.component.html ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<header class=\"flex__header\">\n    <img src=\"../assets/img/logo-black.png\" class=\"header__logo\" />\n  \n    <form action=\"#\" class=\"search\">\n      <input type=\"text\" class=\"search__input\" placeholder=\"Search hotels\">\n      <button class=\"search__button\">\n        <img src=\"../assets/img/icons/magnifying-glass.svg\" alt=\"icon\" class=\"search__icon\">\n      </button>\n    </form>\n  \n    <nav class=\"user-nav\">\n      <div class=\"user-nav__icon-box\">\n        <svg class=\"user-nav__icon\">\n          <use xlink:href=\"../assets/img/icons/sprite.svg#icon-bookmark\"></use>\n        </svg>\n        <span class=\"user-nav__notification\">7</span>\n      </div>\n      <div class=\"user-nav__icon-box\">\n        <svg class=\"user-nav__icon\">\n          <use xlink:href=\"../assets/img/icons/sprite.svg#icon-chat\"></use>\n        </svg>\n        <span class=\"user-nav__notification\">13</span>\n      </div>\n      <div class=\"user-nav__user\">\n        <img src=\"../assets/img/user.jpg\" alt=\"User photo\" class=\"user-nav__user-photo\">\n        <span class=\"user-nav__user-name\">Me</span>\n      </div>\n    </nav>\n</header>\n\n<nav class=\"flex__sidebar\" >\n    <ul class=\"side-nav\" *ngIf=\"show\" >\n      <li class=\"side-nav__item\">\n        <a class=\"side-nav__link\" [routerLink]=\"['/sobre-mi']\" [routerLinkActive]=\"['activado']\">\n          <img src=\"../assets/img/icons/home.svg\" alt=\"icon\" class=\"side-nav__icon\">\n          <span>Home</span>\n        </a>\n      </li>\n      <li class=\"side-nav__item\">\n        <a class=\"side-nav__link\" [routerLink]=\"['/proyectos']\" [routerLinkActive]=\"['activado']\">\n          <img src=\"../assets/img/icons/home.svg\" alt=\"icon\" class=\"side-nav__icon\">\n          <span>Projects</span>\n        </a>\n      </li>\n      <li class=\"side-nav__item\">\n        <a class=\"side-nav__link\" [routerLink]=\"['/crear-proyecto']\" [routerLinkActive]=\"['activado']\">\n          <img src=\"../assets/img/icons/home.svg\" alt=\"icon\" class=\"side-nav__icon\">\n          <span>Create</span>\n        </a>\n      </li>\n      <li class=\"side-nav__item\">\n        <a class=\"side-nav__link\" [routerLink]=\"['/contacto']\" [routerLinkActive]=\"['activado']\">\n          <img src=\"../assets/img/icons/home.svg\" alt=\"icon\" class=\"side-nav__icon\">\n          <span>Contact</span>\n        </a>\n      </li>\n    </ul>\n    <button class=\"btn btn-dark\" style=\"display: inline-block\" (click)=\"toggleShow()\">Toggle</button>\n  </nav>\n  "
+
+/***/ }),
+
+/***/ "./src/app/components/header/header.component.ts":
+/*!*******************************************************!*\
+  !*** ./src/app/components/header/header.component.ts ***!
+  \*******************************************************/
+/*! exports provided: HeaderComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HeaderComponent", function() { return HeaderComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var HeaderComponent = /** @class */ (function () {
+    function HeaderComponent() {
+        this.show = true;
+    }
+    HeaderComponent.prototype.toggleShow = function () {
+        this.show = !this.show;
+    };
+    HeaderComponent.prototype.ngOnInit = function () {
+    };
+    HeaderComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-header',
+            template: __webpack_require__(/*! ./header.component.html */ "./src/app/components/header/header.component.html"),
+            styles: [__webpack_require__(/*! ./header.component.css */ "./src/app/components/header/header.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], HeaderComponent);
+    return HeaderComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/components/projects/projects.component.css":
 /*!************************************************************!*\
   !*** ./src/app/components/projects/projects.component.css ***!
@@ -663,7 +733,7 @@ module.exports = "\r\n\r\n.project {\r\n    list-style: none;\r\n    display:blo
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!--\n<div class=\"container\">\n  <h2>Projects</h2>\n\n  <ul>\n    <li *ngFor=\"let project of projects\" class=\"project\">\n      <a [routerLink]=\"['/proyecto', project._id]\">\n        <div class=\"image\">\n          <img src=\"{{url+ 'get-image/' +project.image}}\" *ngIf=\"project.image\" />\n        </div>\n        <h2>{{project.name}}</h2>\n        {{project.category}}\n      </a>\n    </li>\n  </ul>\n</div>\n\n-->\n<section class=\"project-container\" id=\"project-container\">\n  <div class=\"u-center-text\">\n      <h2 class=\"heading-secondary\">\n        About my Projects & Designs.\n      </h2>\n  </div>\n\n    <div class=\"project-card\"  *ngFor=\"let project of projects\"  >\n        <a [routerLink]=\"['/proyecto', project._id]\">\n            <div class=\"project-card__side project-card__side--front\">\n                <div class=\"project-card__picture project-card__picture--1\">\n                    <img src=\"{{url+ 'get-image/' +project.image}}\" *ngIf=\"project.image\"  class=\"img-fluid\"/>\n                </div>\n                <h4 class=\"project-card__heading\">\n                    <span class=\"project-card__heading-span project-card__heading-span--1\">{{project.category}}</span>\n                </h4>\n                <div class=\"project-card__details\">\n                    <ul>\n                        <li>Name:&nbsp;<strong>{{project.name}}</strong></li>\n                        <li>Technologies: &nbsp;<strong>{{project.langs}}</strong></li>\n                        <li>Date:&nbsp;<strong>{{project.year}}</strong></li>\n                        <li>More details &nbsp;<i class=\"fa fa-angle-double-right\"></i></li>                        \n                    </ul>\n                </div>\n            </div>\n            <div class=\"project-card__side project-card__side--back project-card__side--back-1\">\n                <div class=\"project-card__cta\">\n                    <div class=\"project-card__price-box\">\n                        <div>\n                            <img src=\"{{url+ 'get-image/' +project.image}}\" *ngIf=\"project.image\" class=\"img-slide\"/>\n                        </div>\n                        <div class=\"project-card__price-box\">\n                            <h4>{{project.name}}</h4>\n                        </div>\n                    </div>\n                    <a href=\"#popup\" class=\"btn btn--white\">Book now!</a>\n                </div>\n            </div>\n        </a>    \n    </div>\n</section>"
+module.exports = "<!--\n<div class=\"container\">\n  <h2>Projects</h2>\n\n  <ul>\n    <li *ngFor=\"let project of projects\" class=\"project\">\n      <a [routerLink]=\"['/proyecto', project._id]\">\n        <div class=\"image\">\n          <img src=\"{{url+ 'get-image/' +project.image}}\" *ngIf=\"project.image\" />\n        </div>\n        <h2>{{project.name}}</h2>\n        {{project.category}}\n      </a>\n    </li>\n  </ul>\n</div>\n\n-->\n<section class=\"project-container\" id=\"project-container\">\n  <div class=\"u-center-text\">\n      <h2 class=\"heading-secondary\">\n        About my Projects & Designs &nbsp; <i class=\"fa fa-hand-point-down\"></i>.\n      </h2>\n  </div>\n\n    <div class=\"project-card\"  *ngFor=\"let project of projects\"  >\n        <a [routerLink]=\"['/proyecto', project._id]\">\n            <div class=\"project-card__side project-card__side--front\">\n                <div class=\"project-card__picture project-card__picture--1\">\n                    <img src=\"{{url+ 'get-image/' +project.image}}\" *ngIf=\"project.image\"  class=\"img-fluid\"/>\n                </div>\n                <h4 class=\"project-card__heading\">\n                    <span class=\"project-card__heading-span project-card__heading-span--1\">{{project.category}}</span>\n                </h4>\n                <div class=\"project-card__details\">\n                    <ul>\n                        <li>Name:&nbsp;<strong>{{project.name}}</strong></li>\n                        <li>Technologies: &nbsp;<strong>{{project.langs}}</strong></li>\n                        <li>Date:&nbsp;<strong>{{project.year}}</strong></li>\n                        <li>More details &nbsp;<i class=\"fa fa-angle-double-right\"></i></li>                        \n                    </ul>\n                </div>\n            </div>\n            <div class=\"project-card__side project-card__side--back project-card__side--back-1\">\n                <div class=\"project-card__cta\">\n                    <div class=\"project-card__price-box\">\n                        <div>\n                            <img src=\"{{url+ 'get-image/' +project.image}}\" *ngIf=\"project.image\" class=\"img-slide\"/>\n                        </div>                        \n                            <h4 class=\"mt-3\">{{project.name}}</h4>                        \n                    </div>\n                </div>\n            </div>\n        </a>    \n    </div>\n</section>"
 
 /***/ }),
 

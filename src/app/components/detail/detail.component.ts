@@ -20,7 +20,6 @@ export class DetailComponent implements OnInit {
     private _route: ActivatedRoute
   ){
     this.url = Global.url;
-
    }
 
   ngOnInit() {

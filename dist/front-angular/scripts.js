@@ -11,5 +11,7 @@
 ;'use strict'
 console.log("JavaScrip cargado");
 
+
+
 ;
 //# sourceMappingURL=scripts.js.map

@@ -1,60 +1,6 @@
-<header class="flex__header">
-  <img src="../assets/img/logo-black.png" class="header__logo" />
 
-  <form action="#" class="search">
-    <input type="text" class="search__input" placeholder="Search hotels">
-    <button class="search__button">
-      <img src="../assets/img/icons/magnifying-glass.svg" alt="icon" class="search__icon">
-    </button>
-  </form>
+<app-header></app-header>
 
-  <nav class="user-nav">
-    <div class="user-nav__icon-box">
-      <svg class="user-nav__icon">
-        <use xlink:href="../assets/img/icons/sprite.svg#icon-bookmark"></use>
-      </svg>
-      <span class="user-nav__notification">7</span>
-    </div>
-    <div class="user-nav__icon-box">
-      <svg class="user-nav__icon">
-        <use xlink:href="../assets/img/icons/sprite.svg#icon-chat"></use>
-      </svg>
-      <span class="user-nav__notification">13</span>
-    </div>
-    <div class="user-nav__user">
-      <img src="../assets/img/user.jpg" alt="User photo" class="user-nav__user-photo">
-      <span class="user-nav__user-name">Me</span>
-    </div>
-  </nav>
-</header>
-<nav class="flex__sidebar">
-  <ul class="side-nav">
-    <li class="side-nav__item">
-      <a class="side-nav__link" [routerLink]="['/sobre-mi']" [routerLinkActive]="['activado']">
-        <img src="../assets/img/icons/home.svg" alt="icon" class="side-nav__icon">
-        <span>Home</span>
-      </a>
-    </li>
-    <li class="side-nav__item">
-      <a class="side-nav__link" [routerLink]="['/proyectos']" [routerLinkActive]="['activado']">
-        <img src="../assets/img/icons/home.svg" alt="icon" class="side-nav__icon">
-        <span>Projects</span>
-      </a>
-    </li>
-    <li class="side-nav__item">
-      <a class="side-nav__link" [routerLink]="['/crear-proyecto']" [routerLinkActive]="['activado']">
-        <img src="../assets/img/icons/home.svg" alt="icon" class="side-nav__icon">
-        <span>Create</span>
-      </a>
-    </li>
-    <li class="side-nav__item">
-      <a class="side-nav__link" [routerLink]="['/contacto']" [routerLinkActive]="['activado']">
-        <img src="../assets/img/icons/home.svg" alt="icon" class="side-nav__icon">
-        <span>Contact</span>
-      </a>
-    </li>
-  </ul>
-</nav>
 
 <div class="flex__container">
   <div class="flex__content">
