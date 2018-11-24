@@ -1,11 +1,11 @@
 
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { routing, appRoutingProviders } from './app.routing';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
-
 
 
 import { AppComponent } from './app.component';
@@ -16,6 +16,8 @@ import { ContactComponent } from './components/contact/contact.component';
 import { ErrorComponent } from './components/error/error.component';
 import { ComponentsComponent } from './components/components.component';
 import { DetailComponent } from './components/detail/detail.component';
+import { HeaderComponent } from './components/header/header.component';
+
 
 
 @NgModule({
@@ -28,6 +30,7 @@ import { DetailComponent } from './components/detail/detail.component';
     ErrorComponent,
     ComponentsComponent,
     DetailComponent,
+    HeaderComponent
     
   ],
   imports: [

@@ -19,7 +19,7 @@
 <section class="project-container" id="project-container">
   <div class="u-center-text">
       <h2 class="heading-secondary">
-        About my Projects & Designs.
+        About my Projects & Designs &nbsp; <i class="fa fa-hand-point-down"></i>.
       </h2>
   </div>
 
@@ -46,12 +46,9 @@
                     <div class="project-card__price-box">
                         <div>
                             <img src="{{url+ 'get-image/' +project.image}}" *ngIf="project.image" class="img-slide"/>
-                        </div>
-                        <div class="project-card__price-box">
-                            <h4>{{project.name}}</h4>
-                        </div>
+                        </div>                        
+                            <h4 class="mt-3">{{project.name}}</h4>                        
                     </div>
-                    <a href="#popup" class="btn btn--white">Book now!</a>
                 </div>
             </div>
         </a>    

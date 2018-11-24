@@ -1,39 +1,65 @@
-<div class="navigation">
-    <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
-    <label for="navi-toggle" class="navigation__button">
-          <span class="navigation__icon">&nbsp;</span>
-    </label>
-    <div class="navigation__background">&nbsp;</div>
-    <nav class="navigation__nav">
-        <ul class="navigation__list">
-            <li class="navigation__item"><a class="navigation__link" [routerLink]="['/sobre-mi']" [routerLinkActive]="['actived']">About</a></li>
-            <li class="navigation__item"><a class="navigation__link" [routerLink]="['/proyectos']" [routerLinkActive]="['actived']">Projects</a></li>
-            <li class="navigation__item"><a class="navigation__link" [routerLink]="['/crear-proyecto']" [routerLinkActive]="['actived']">Create</a></li>
-            <li class="navigation__item"><a class="navigation__link" [routerLink]="['/contacto']" [routerLinkActive]="['actived']">Contact</a></li>
-        </ul>
-    </nav>
-    
-</div>
+<header class="flex__header">
+  <img src="../assets/img/logo-black.png" class="header__logo" />
 
-<header class="header">
-  <div class="header__logo-box">
-    <img src="../assets/img/logo-white.png" class="header__logo" />
-  </div>
- 
-  <div class="header__text-box">
-    <h1 class="heading-primary">
-      <span class="heading-primary--main">Daniel Velasco</span>
-      <span class="heading-primary--sub">Web & Graphic Designer / Audiovisual Artist</span>
-    </h1>
+  <form action="#" class="search">
+    <input type="text" class="search__input" placeholder="Search hotels">
+    <button class="search__button">
+      <img src="../assets/img/icons/magnifying-glass.svg" alt="icon" class="search__icon">
+    </button>
+  </form>
 
-    <a href="#" class="my-btn my-btn--white my-btn--animated">Enter site</a>
-  </div>
+  <nav class="user-nav">
+    <div class="user-nav__icon-box">
+      <svg class="user-nav__icon">
+        <use xlink:href="../assets/img/icons/sprite.svg#icon-bookmark"></use>
+      </svg>
+      <span class="user-nav__notification">7</span>
+    </div>
+    <div class="user-nav__icon-box">
+      <svg class="user-nav__icon">
+        <use xlink:href="../assets/img/icons/sprite.svg#icon-chat"></use>
+      </svg>
+      <span class="user-nav__notification">13</span>
+    </div>
+    <div class="user-nav__user">
+      <img src="../assets/img/user.jpg" alt="User photo" class="user-nav__user-photo">
+      <span class="user-nav__user-name">Me</span>
+    </div>
+  </nav>
 </header>
+<nav class="flex__sidebar">
+  <ul class="side-nav">
+    <li class="side-nav__item">
+      <a class="side-nav__link" [routerLink]="['/sobre-mi']" [routerLinkActive]="['activado']">
+        <img src="../assets/img/icons/home.svg" alt="icon" class="side-nav__icon">
+        <span>Home</span>
+      </a>
+    </li>
+    <li class="side-nav__item">
+      <a class="side-nav__link" [routerLink]="['/proyectos']" [routerLinkActive]="['activado']">
+        <img src="../assets/img/icons/home.svg" alt="icon" class="side-nav__icon">
+        <span>Projects</span>
+      </a>
+    </li>
+    <li class="side-nav__item">
+      <a class="side-nav__link" [routerLink]="['/crear-proyecto']" [routerLinkActive]="['activado']">
+        <img src="../assets/img/icons/home.svg" alt="icon" class="side-nav__icon">
+        <span>Create</span>
+      </a>
+    </li>
+    <li class="side-nav__item">
+      <a class="side-nav__link" [routerLink]="['/contacto']" [routerLinkActive]="['activado']">
+        <img src="../assets/img/icons/home.svg" alt="icon" class="side-nav__icon">
+        <span>Contact</span>
+      </a>
+    </li>
+  </ul>
+</nav>
 
-<section id="content" class="mt-5">
-  <router-outlet></router-outlet>
-</section>
-
-<footer>
-  <h4>Daniel Velasco &copy;</h4>
-</footer>
+<div class="flex__container">
+  <div class="flex__content">
+    <main class="view">
+      <router-outlet></router-outlet>
+    </main>
+  </div>
+</div>
